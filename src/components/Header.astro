@@ -1,0 +1,183 @@
+<header class="fixed w-full bg-blue-700 shadow-sm z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex justify-between items-center py-6">
+      <!-- Logo -->
+      <a href="#" class="text-2xl font-bold text-white">
+        INFOCTN
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-10">
+        <!-- Académico Dropdown -->
+        <div class="relative" data-dropdown>
+          <button class="group inline-flex items-center text-white hover:text-gray-200 cursor-pointer">
+            <span class="text-base font-medium">Académico</span>
+            <svg class="ml-2 h-5 w-5 text-white group-hover:text-gray-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          
+          <div class="hidden submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-blue-700 ring-1 ring-black ring-opacity-5">
+            <div class="py-1">
+              <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-600">Inscripciones</a>
+              <a href="https://aprendizaje.mec.edu.py/aprendizaje/familia/documentos" class="block px-4 py-2 text-sm text-white hover:bg-blue-600">Evaluaciones</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Institución Dropdown -->
+        <div class="relative" data-dropdown>
+          <button class="group inline-flex items-center text-white hover:text-gray-200 cursor-pointer">
+            <span class="text-base font-medium">Institución</span>
+            <svg class="ml-2 h-5 w-5 text-white group-hover:text-gray-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          
+          <div class="hidden submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-blue-700 ring-1 ring-black ring-opacity-5">
+            <div class="py-1">
+              <a href="/about #nostros" class="block px-4 py-2 text-sm text-white hover:bg-blue-600">Sobre Nosotros</a>
+              <a href="/about #organigrama" class="block px-4 py-2 text-sm text-white hover:bg-blue-600">Organigrama</a>
+              <a href="/about #mision-vision" class="block px-4 py-2 text-sm text-white hover:bg-blue-600">Misión y Visión</a>
+              <a href="/about #funcionarios" class="block px-4 py-2 text-sm text-white hover:bg-blue-600">Funcionarios</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="text-base font-medium text-white hover:text-gray-200">
+          Noticias
+        </a>
+        <a href="#" class="text-base font-medium text-white hover:text-gray-200">
+          Contacto
+        </a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-200 hover:bg-blue-600">
+        <span class="sr-only">Abrir menú</span>
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menú móvil -->
+<div id="mobile-menu" class="hidden fixed top-0 right-0 w-2/3 h-full bg-blue-900 shadow-lg transform transition-transform duration-300 ease-in-out translate-x-full">
+  <div class="p-6">
+    <div class="flex items-center justify-end">
+      <button id="mobile-menu-close" class="text-white hover:text-gray-200">
+        <span class="sr-only">Cerrar menú</span>
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mt-6">
+      <div class="space-y-2">
+        <!-- Académico -->
+        <div>
+          <button class="block w-full text-left py-2 text-base font-medium text-white hover:text-gray-200 focus:outline-none" data-submenu="submenu-academico">
+            Académico
+            <svg class="float-right h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="submenu-academico" class="hidden ml-4 mt-2 space-y-2">
+            <a href="#" class="block py-1 text-sm text-white hover:text-gray-200">Inscripciones</a>
+            <a href="#" class="block py-1 text-sm text-white hover:text-gray-200">Evaluaciones</a>
+          </div>
+        </div>
+
+        <!-- Institución -->
+        <div>
+          <button class="block w-full text-left py-2 text-base font-medium text-white hover:text-gray-200 focus:outline-none" data-submenu="submenu-institucion">
+            Institución
+            <svg class="float-right h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="submenu-institucion" class="hidden ml-4 mt-2 space-y-2">
+            <a href="/about#nosotros" class="block py-1 text-sm text-white hover:text-gray-200">Sobre nosotros</a>
+            <a href="/about#organigrama" class="block py-1 text-sm text-white hover:text-gray-200">Organigrama</a>
+            <a href="/about#mision-vision" class="block py-1 text-sm text-white hover:text-gray-200">Misión y visión</a>
+            <a href="/about#funcionarios" class="block py-1 text-sm text-white hover:text-gray-200">Funcionarios</a>
+          </div>
+        </div>
+
+        <a href="/noticias" class="block py-2 text-base font-medium text-white hover:text-gray-200">
+          Noticias
+        </a>
+        <a href="#contacto" class="block py-2 text-base font-medium text-white hover:text-gray-200">
+          Contacto
+        </a>
+      </div>
+    </nav>
+  </div>
+</div>
+</header>
+
+
+
+<script>
+  // Desktop dropdowns
+  const dropdowns = document.querySelectorAll('[data-dropdown]');
+  
+  dropdowns.forEach(dropdown => {
+    const button = dropdown.querySelector('button');
+    const submenu = dropdown.querySelector('.submenu');
+
+    button?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      submenu?.classList.toggle('hidden');
+    });
+  });
+
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.submenu').forEach(submenu => {
+      submenu.classList.add('hidden');
+    });
+  });
+
+   // Mobile menu
+   const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenuClose = document.getElementById('mobile-menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.remove('hidden');
+    mobileMenu?.classList.remove('translate-x-full');
+    
+  });
+
+  mobileMenuClose?.addEventListener('click', () => {
+    mobileMenu?.classList.add('translate-x-full');
+    setTimeout(() => {
+      mobileMenu?.classList.add('hidden');
+    }, 300);
+  });
+
+  // Manejo de submenús
+  document.querySelectorAll('[data-submenu]').forEach(button => {
+    button.addEventListener('click', () => {
+      const submenuId = button.getAttribute('data-submenu');
+      const submenu = submenuId ? document.getElementById(submenuId) : null;
+      const arrow = button.querySelector('svg');
+      
+      // Toggle submenu
+      submenu?.classList.toggle('hidden');
+      
+      // Rotate arrow
+      arrow?.classList.toggle('rotate-180');
+      
+      // Si es un submenú anidado, asegúrate de que el padre permanezca visible
+      const parentSubmenu = button.closest('.hidden');
+      if (parentSubmenu) {
+        parentSubmenu.classList.remove('hidden');
+      }
+    });
+  });
+  
+</script>
